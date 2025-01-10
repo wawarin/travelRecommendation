@@ -1,0 +1,290 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  /* background-image: url('path/to/your/image.jpg'); */
+  background-size: cover;
+  /* Ensures the image covers the entire nav area */
+  background-position: center;
+  /* Centers the image */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+  display: inline;
+  padding: 0 20px;
+}
+
+nav ul li a,
+nav ul li input,
+nav ul li button {
+  color: white;
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 5px 10px;
+}
+
+nav ul li input {
+  color: black;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  flex: 1 1 50%;
+  /* Each column takes up 50% of the width */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.introduction,
+.recommendation {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* .column {
+  background-image: url('./image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+/* align-items: center;
+} */
+
+.column.introduction {
+  text-align: left;
+  color: white;
+  font-size: 2rem;
+  padding: 0 20px;
+}
+
+.column.recommendation {
+  background-color: #f1f1f1;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+*/ body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background: #35424a;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #35424a;
+}
+
+footer {
+  background: #35424a;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+a {
+  color: #35424a;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Waa's Travel Recommendation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>Waa's Travel</h1>
+      <ul>
+        <li><a href="travel_recommendation.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li>
+          <input
+            type="text"
+            id="conditionInput"
+            placeholder="Enter a destination or keyword"
+          />
+        </li>
+        <li><button id="btnSearch">Search</button></li>
+        <li><button id="btnReset">Clear</button></li>
+      </ul>
+    </nav>
+    <div class="column">
+      <div class="introduction">
+        <h2>Welcome to Waa's Travel Recommendation</h2>
+        <p>
+          Discover the best travel destinations and plan your perfect trip with
+          our recommendations. Whether you're looking for adventure, relaxation,
+          or cultural experiences, we've got you covered.
+        </p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="recommendation">
+        <h2>Top Recommendations</h2>
+        <ul>
+          <li>Paris, France - The city of lights and love.</li>
+          <li>Kyoto, Japan - A blend of traditional and modern culture.</li>
+          <li>New York, USA - The city that never sleeps.</li>
+          <li>Rome, Italy - A journey through ancient history.</li>
+          <li>Maldives - A tropical paradise.</li>
+        </ul>
+      </div>
+    </div>
+    <script src="./travel_recommendation.js"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waa's Travel Recommendation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>Waa's Travel</h1>
+      <ul>
+        <li><a href="travel_recommendation.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li>
+          <input
+            type="text"
+            id="conditionInput"
+            placeholder="Enter a destination or keyword"
+          />
+        </li>
+        <li><button id="btnSearch">Search</button></li>
+        <li><button id="btnReset">Clear</button></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="column introduction">
+        <h2>Welcome to Waa's Travel Recommendation</h2>
+        <p>
+          Discover the best travel destinations and plan your perfect trip with
+          our recommendations. Whether you're looking for adventure, relaxation,
+          or cultural experiences, we've got you covered.
+        </p>
+      </div>
+      <div class="column recommendation">
+        <h2>Top Recommendations</h2>
+        <ul>
+          <li>Paris, France - The city of lights and love.</li>
+          <li>Kyoto, Japan - A blend of traditional and modern culture.</li>
+          <li>New York, USA - The city that never sleeps.</li>
+          <li>Rome, Italy - A journey through ancient history.</li>
+          <li>Maldives - A tropical paradise.</li>
+        </ul>
+      </div>
+    </div>
+    <script src="./travel_recommendation.js"></script>
+  </body>
+</html>

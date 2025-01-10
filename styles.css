@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+
+  display: flex;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Navigation Styles */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a,
+nav ul li input,
+nav ul li button {
+  color: white;
+  text-decoration: none;
+  border: white;
+  background: none;
+  padding: 5px 10px;
+}
+
+nav ul li input {
+  color: white;
+}
+
+/* Layout Styles */
+.container {
+  background-image: url('./image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  border-top: 50px solid #333;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  /* Offset for fixed nav */
+}
+
+.column {
+  flex: 1 1 50%;
+  /* Each column takes 50% width */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.column.introduction {
+  color: white;
+  text-align: left;
+  padding: 40px;
+}
+
+.column.recommendation {
+  /* background-color: #f1f1f1; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .column {
+    flex: 1 1 100%;
+    /* Full width on small screens */
+  }
+}

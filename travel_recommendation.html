@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waa's Travel Recommendation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>Waa's Travel</h1>
+      <ul>
+        <li><a href="travel_recommendation.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li>
+          <input
+            type="text"
+            id="conditionInput"
+            placeholder="Enter a destination or keyword"
+          />
+        </li>
+        <li><button id="btnSearch">Search</button></li>
+        <li><button id="btnReset">Clear</button></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="column introduction">
+        <h2>Welcome to Waa's Travel Recommendation</h2>
+        <p>
+          Discover the best travel destinations and plan your perfect trip with
+          our recommendations. Whether you're looking for adventure, relaxation,
+          or cultural experiences, we've got you covered.
+        </p>
+      </div>
+      <div class="column recommendation">
+        <h2>Top Recommendations</h2>
+        <div id="result"></div>
+      </div>
+    </div>
+    <script src="./travel_recommendation.js"></script>
+  </body>
+</html>
